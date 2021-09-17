@@ -1,369 +1,53 @@
-<!doctype html>
-<html>
-	<head>
-		<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
-		<title>Заголовок</title>
-		<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700&display=swap" rel="stylesheet">
-<link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
-
-		<link href="style.css" rel="stylesheet">
-		<style>
-			*{
-				font-family: 'Montserrat', sans-serif;
-			}
-			body{
-				margin: 0;
-			}
-			h2{
-				font-weight: 500;
-				font-size: 48px;
-			}
-			.main-block{
-				min-height: 100vh;
-				/* border: 1px solid black; */
-			}
-			.main-block_black{
-				background: #081130;
-			}
-			.main-block_black h2{
-				color: white;
-			}
-			.content-width{
-				width: 1180px;
-				margin: 0 auto;
-			}
-			.button{
-				display: block;
-				text-decoration: none;
-				border: none;
-				background: #FED84C;
-				border-radius: 8px;
-				color: #2E363E;
-				padding: 30px 50px;
-				width: fit-content;
-				font-size: 18px;
-			}
-			.button_small{
-				padding: 20px 40px;
-			}
-			.button:hover{
-				opacity: 0.5;
-			}
-			.badge{
-				padding: 10px 18px;
-				font-size: 11px;
-				color: #2E363E;
-				background: #F2F6FA;
-				text-transform: uppercase;
-				border-radius: 8px;
-				width: fit-content;
-				/* display: inline-block; */
-			}
-
-
-
-			.main-block_first{
-				background-image: url('images/first.jpg');
-				background-repeat:  no-repeat;
-				background-position: center;
-				background-size: cover;
-				color: white;
-			}
-			header{
-				height: 59px;
-				border-bottom: 1px solid #7E868E;
-			}
-			.header__content{
-				height: 100%;
-				display: flex;
-				justify-content: space-between;
-				align-items: center;
-				color: white;
-			}
-			.header__content a{
-				text-decoration: none;
-				color: white;
-			}
-			.header__logo a{
-				font-weight: 500;
-				font-size: 21px;
-			}
-			.header__contacts{
-				display: flex;
-			}
-			.header_address{
-				padding-right: 80px;
-				font-size: 12px;
-			}
-			.header__phone{
-				font-size: 20px;
-				font-weight: bold;
-				position: relative;
-			}
-			.phone-prefix{
-				position: relative;
-			}
-			.phone-prefix::before{
-				content: "";
-				display: block;
-				background-image: url('images/Vector.svg');
-				background-repeat: no-repeat;
-				width: 25px;
-				height: 25px;
-				position: absolute;
-				left: -25px;
-				top: 5px;
-			}
-			.header__time{
-				font-size: 13px;
-			}
-			.first{
-				display: flex;
-				min-height: 90vh;
-				align-items: center;
-			}
-			.first__main{
-				width: 647px;
-			}
-			.first__header{
-				font-size: 48px;
-				font-weight: bold;
-			}
-			.first__text{
-				font-size: 24px;
-			}
-			.cards{
-				display: flex;
-				flex-wrap: wrap;
-				justify-content: space-between;
-			}
-			.card{
-				width: 380px;
-				font-size: 24px;
-				box-shadow: 2px 8px 16px 0 rgba(194, 198, 208, 0.06) ;
-				border-radius: 10px;
-				margin-bottom: 20px;
-			}
-			.card__image{
-				height: 245px;
-				overflow: hidden;
-				width: 100%;
-			}
-			.card__image{
-				border-radius: 10px 10px 0 0;
-			}
-			.card__content{
-				padding: 50px 44px;
-			}
-			.card__title{
-				font-weight: bold;
-			}
-			.card__description{
-				font-family: 18px;
-			}
-			.gallery{
-				display: flex;
-				justify-content: space-between;
-				flex-wrap: wrap;
-				padding: 20px;
-			}
-			.gallery *{
-				display: block;
-				width: 33%;
-				height: 444px;
-				background-size: cover;
-				margin-bottom: 20px;
-			}
-			.phone{
-				background-color: #F2F6FA;
-				color: #cccccc;
-				padding: 32px 58px;
-				border-radius: 30px;
-				border: none;
-				outline: none;
-				background-image: url('images/Vector.svg');
-				background-repeat: no-repeat;
-				background-position: 29px 33px;
-			}
-
-		</style>
-	</head>
-	<body>
-		<div class="main-block main-block_first">
-			<header>
-				<div class="content-width header__content">
-					<div class="header__logo">
-						<a href="#">Сладкий сундук</a>
-					</div>
-					<div class="header__contacts">
-						<div class="header_address phone-prefix">
-							<a href="#">г. Санкт-Петербург, <br/>ул. Большая Морская, 18</a>
-						</div>
-						<div class="header__phonetime">
-							<div class="header__phone phone-prefix"><a href="tel:+78121111111">8 (812) 111-11-11</a></div>
-							<div class="header__time">Ежедневно с 9:00 до 20:00</div>
-						</div>
-					</div>
-				</div>
-			</header>
-			<div class="content-width first">
-				<div class="first__main">
-					<div class="badge">вкуснейшие</div>
-					<div class="first__header">Пирожные и капкейки от 150 ₽/шт. с доставкой по Санкт Петербургу</div>
-					<div class="first__text">Приготовим за 3 часа в день заказа. 
-						Доставка на авто в холодильнике.</div>
-					<div>
-						<a href="#" class="button">Перейти в каталог</a>
-						<div>9 различных видов на выбор</div>
-					</div>
-				</div>
-			</div>
-		</div>
-		<div class="main-block">
-			<div class="content-width">
-				<h2>Для любых событий и дорогих вам людей <i class="fa fa-rss"></i> </h2>
-				<div class="cards">
-					<div class="card">
-						<div class="card__image">
-							<img src="images/card.jpg" />
-						</div>
-						<div class="card__content">
-							<div class="card__title">Кремовый замок</div>
-							<div class="card__description">Нежный цвет...</div>
-							<div class="card__price">150 ₽/шт. </div>
-							<div class="button button_small">Заказать</div>
-						</div>
-					</div>
-					<div class="card">
-						<div class="card__image">
-							<img src="images/card.jpg" />
-						</div>
-						<div class="card__content">
-							<div class="card__title">Кремовый замок</div>
-							<div class="card__description">Нежный цвет...</div>
-							<div class="card__price">150 ₽/шт. </div>
-							<div class="button button_small">Заказать</div>
-						</div>
-					</div>
-					<div class="card">
-						<div class="card__image">
-							<img src="images/card.jpg" />
-						</div>
-						<div class="card__content">
-							<div class="card__title">Кремовый замок</div>
-							<div class="card__description">Нежный цвет...</div>
-							<div class="card__price">150 ₽/шт. </div>
-							<div class="button button_small">Заказать</div>
-						</div>
-					</div>
-					<div class="card">
-						<div class="card__image">
-							<img src="images/card.jpg" />
-						</div>
-						<div class="card__content">
-							<div class="card__title">Кремовый замок</div>
-							<div class="card__description">Нежный цвет...</div>
-							<div class="card__price">150 ₽/шт. </div>
-							<div class="button button_small">Заказать</div>
-						</div>
-					</div>
-					<div class="card">
-						<div class="card__image">
-							<img src="images/card.jpg" />
-						</div>
-						<div class="card__content">
-							<div class="card__title">Кремовый замок</div>
-							<div class="card__description">Нежный цвет...</div>
-							<div class="card__price">150 ₽/шт. </div>
-							<div class="button button_small">Заказать</div>
-						</div>
-					</div>
-					<div class="card">
-						<div class="card__image">
-							<img src="images/card.jpg" />
-						</div>
-						<div class="card__content">
-							<div class="card__title">Кремовый замок</div>
-							<div class="card__description">Нежный цвет...</div>
-							<div class="card__price">150 ₽/шт. </div>
-							<div class="button button_small">Заказать</div>
-						</div>
-					</div>
-					<div class="card">
-						<div class="card__image">
-							<img src="images/card.jpg" />
-						</div>
-						<div class="card__content">
-							<div class="card__title">Кремовый замок</div>
-							<div class="card__description">Нежный цвет...</div>
-							<div class="card__price">150 ₽/шт. </div>
-							<div class="button button_small">Заказать</div>
-						</div>
-					</div>
-					<div class="card">
-						<div class="card__image">
-							<img src="images/card.jpg" />
-						</div>
-						<div class="card__content">
-							<div class="card__title">Кремовый замок</div>
-							<div class="card__description">Нежный цвет...</div>
-							<div class="card__price">150 ₽/шт. </div>
-							<div class="button button_small">Заказать</div>
-						</div>
-					</div>
-					<div class="card">
-						<div class="card__image">
-							<img src="images/card.jpg" />
-						</div>
-						<div class="card__content">
-							<div class="card__title">Кремовый замок</div>
-							<div class="card__description">Нежный цвет...</div>
-							<div class="card__price">150 ₽/шт. </div>
-							<div class="button button_small">Заказать</div>
-						</div>
-					</div>
-				</div>
-			</div>
-		</div>
-		<div class="main-block main-block_black">
-			<div class="content-width">
-				<div class="badge">Не нашли?</div>
-				<h2>Приготовим заказ любой сложности по фото или эскизу</h2>
-			</div>
-		</div>
-		<div class="main-block">
-			<div class="content-width">
-				<h2>Лично приготовлю и всё красиво упакую для вашего события</h2>
-			</div>
-		</div>
-		<div class="main-block main-block_black">
-			<div class="content-width">
-				<h2>Почитайте отзывы довольных клиентов</h2>
-			</div>
-		</div>
-		<div class="main-block">
-			<div class="content-width">
-				<h2>Сделали более 3.000 заказов за 2 года</h2>
-			</div>
-			<div class="gallery">
-				<div style="background-image: url('images/photo.jpg');"></div>
-				<img src="images/photo.jpg" />
-				<a href="#" style="background-image: url('images/photo.jpg');"></a>
-				<a href="#" style="background-image: url('images/photo.jpg');"></a>
-				<a href="#" style="background-image: url('images/photo.jpg');"></a>
-				<a href="#" style="background-image: url('images/photo.jpg');"></a>
-				<a href="#" style="background-image: url('images/photo.jpg');"></a>
-				<a href="#" style="background-image: url('images/photo.jpg');"></a>
-				<a href="#" style="background-image: url('images/photo.jpg');"></a>
-			</dib>
-		</div>
-		<div class="main-block">
-			<div class="content-width">
-				<h2>Почитайте отзывы довольных клиентов</h2>
-				<input type="tel" class="phone" placeholder="Номер телефона"/>
-			</div>
-		</div>
-	</body>
-</html>
+<h1>Заголовок первого уровня</h1>
+<h2>Заголовок второго уровня</h2>
+<p>
+	Hello <strong>world</strong>!
+</p>
+<p>
+	<em>
+		We learn <br/>
+		<strong>
+			<abbr title="Hyper Text Markup Language">
+				HTML
+			</abbr>
+		</strong>
+	</em>
+</p>
+<p>
+	<em>Text</em>
+</p>
+<div>
+	<strong>
+		<u>Text</u>
+	</strong>
+</div>
+<img src="image.jpg" height="200" 
+/><img src="images/dog.jpg" height="200" />
+<div>Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text </div>
+<p>
+	<a href="https://ya.ru">Яндекс</a>
+</p>
+<p>
+	<a href="https://ya.ru" target="_blank">Яндекс с новой страницы</a>
+</p>
+<p>
+	<a href="index2.html">Index 2</a>
+</p>
+<p>
+	<a href="images/index3.html">Index 3</a>
+</p>
+<p>
+	<a href="https://ya.ru">
+		<img src="image.jpg" height="200" />
+	</a>
+</p>
+<ul>
+	<li>Хлеб</li>
+	<li>Огурцы</li>
+	<li>Помидоры</li>
+</ul>
+<ol>
+	<li>Хлеб</li>
+	<li>Огурцы</li>
+	<li>Помидоры</li>
+</ol>
