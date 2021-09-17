@@ -1,0 +1,70 @@
+
+<html>
+
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+	<title>Шаблон</title>
+	<style>
+		/* CSS-стили */
+		.red,
+		.green {
+			display: none;
+			padding: 20px;
+			;
+		}
+
+		#radio-red:checked~div .red {
+			display: block;
+		}
+
+		#radio-green:checked~div .green {
+			display: block;
+		}
+
+		.red {
+			border: 1px solid red;
+		}
+
+		.green {
+			border: 1px solid green;
+		}
+
+		label {
+			border: 1px solid black;
+			padding: 20px;
+			display: inline-block;
+			cursor: pointer;
+		}
+
+		#radio-red:checked~div #radio-red-label {
+			color: red;
+		}
+
+		#radio-green:checked~div #radio-green-label {
+			color: green;
+		}
+
+		.my-radio {
+			display: none;
+		}
+	</style>
+</head>
+
+<body>
+	<input type="radio" id="radio-red" class="my-radio" name="test" checked />
+	<input type="radio" id="radio-green" class="my-radio" name="test" />
+	<div>
+		<label for="radio-red" id="radio-red-label">Показать красный блок</label>
+		<label for="radio-green" id="radio-green-label">Показать зеленый блок</label>
+	</div>
+	<div>
+		<div class="red">RED</div>
+		<div class="green">GREEN</div>
+	</div>
+	<a href="#">123455</a>
+	<div class="test"></div>
+	<div></div>
+
+</body>
+
+</html>

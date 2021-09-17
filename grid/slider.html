@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Document</title>
+    <style>
+        #slide1:checked ~ .slider       .slide1{
+            display: block;
+        }
+        #slide2:checked ~ .slider .slide2{
+            display: block;
+        }
+        #slide3:checked ~ .slider .slide3{
+            display: block;
+        }
+        .slider{
+            display: flex;
+        }
+        .slide{
+            display: none;
+            border: 1px solid red;
+            width: 200px;
+            height: 200px;
+        }
+
+        .buttons{
+            padding: 20px;
+        }
+        .button{
+            display: inline-block;
+            border: 1px solid #aaaaaa;
+            padding: 10px;
+            border-radius: 5px;
+        }
+        #slide1:checked ~ .buttons  .button_slide1{
+            border-color: blue;
+        }
+        #slide2:checked ~ .buttons  .button_slide2{
+            border-color: blue;
+        }
+        #slide3:checked ~ .buttons  .button_slide3{
+            border-color: blue;
+        }
+        input[name=slider]{
+            display: none;
+        }
+        .text{
+            font-size: 60px;
+            padding: 50px;;
+            border: 1px solid rebeccapurple;
+        }
+
+    </style>
+</head>
+<body>
+    <input type="radio" name="slider" id="slide1" checked/>
+    <input type="radio" name="slider" id="slide2"/>
+    <input type="radio" name="slider" id="slide3" />
+    <div class="slider">
+        <div class="slide slide1">1</div>
+        <div class="slide slide2">2</div>
+        <div class="slide slide3">3</div>
+    </div>
+    <div class="buttons">
+        <label for="slide1" class="button button_slide1">1</label>
+        <label for="slide2" class="button button_slide2">2</label>
+        <label for="slide3" class="button button_slide3">3</label>
+    </div>
+    <div class="text">324234 234234 234234 5rt tggffgb vbvb,m mm, m,</div>
+</body>
+</html>

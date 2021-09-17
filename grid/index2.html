@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            margin: 0;
+        }
+        .grid{
+            display: grid;
+            grid-template-columns: 1fr 500px 1fr;
+            grid-template-rows: 50px 100vh repeat(6, 100vh) 100px;
+        }
+        .grid > div{
+            border: 1px solid black;
+            grid-column: 2;
+        }
+        .grid > .block2{
+            grid-column: 1 / 4;
+        }
+        .grid > .header-background{
+            grid-column: 1 / 4;
+            grid-row: 1;
+            background: #390a64;
+        }
+        header{
+            background: #390a64aa;
+            grid-column: 1 / 4;
+            grid-row-start: 1;
+            position: sticky;
+            top:0;
+        }
+        .block1{
+            box-sizing: border-box;
+        }
+        footer{
+            background: #390a64;
+            color: white;
+            padding: 10px;
+            grid-column: 1/4;
+            grid-template-columns: 1fr 1fr 1fr;
+            display: grid;
+        }
+    </style>
+</head>
+<body>
+    <div class="grid">
+        <div class="header-background"></div>
+        <header></header>
+        <div class="block1">1 Lorem ipsum dolor sit amet consectetur adipisicing elit. Id nostrum ducimus labore fuga sequi provident veritatis libero. Sequi soluta reiciendis at et, optio laudantium illum voluptatum odit placeat ipsam possimus?</div>
+        <div class="block2">2Lorem ipsum dolor sit amet consectetur adipisicing elit. Id nostrum ducimus labore fuga sequi provident veritatis libero. Sequi soluta reiciendis at et, optio laudantium illum voluptatum odit placeat ipsam possimus?</div>
+        <div>3Lorem ipsum dolor sit amet consectetur adipisicing elit. Id nostrum ducimus labore fuga sequi provident veritatis libero. Sequi soluta reiciendis at et, optio laudantium illum voluptatum odit placeat ipsam possimus?</div>
+        <div>4Lorem ipsum dolor sit amet consectetur adipisicing elit. Id nostrum ducimus labore fuga sequi provident veritatis libero. Sequi soluta reiciendis at et, optio laudantium illum voluptatum odit placeat ipsam possimus?</div>
+        <div>5Lorem ipsum dolor sit amet consectetur adipisicing elit. Id nostrum ducimus labore fuga sequi provident veritatis libero. Sequi soluta reiciendis at et, optio laudantium illum voluptatum odit placeat ipsam possimus?</div>
+        <div>6Lorem ipsum dolor sit amet consectetur adipisicing elit. Id nostrum ducimus labore fuga sequi provident veritatis libero. Sequi soluta reiciendis at et, optio laudantium illum voluptatum odit placeat ipsam possimus?</div>
+        <div>7Lorem ipsum dolor sit amet consectetur adipisicing elit. Id nostrum ducimus labore fuga sequi provident veritatis libero. Sequi soluta reiciendis at et, optio laudantium illum voluptatum odit placeat ipsam possimus?</div>
+        <div style="display: flex;">
+            <h1>a</h1>
+            <h2>a</h2>
+        </div>
+        <footer>
+            <div>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ex accusamus possimus commodi optio mollitia unde quaerat modi voluptas voluptates odit inventore temporibus et harum, aliquid iure veritatis veniam! Accusantium, tenetur.</div>
+            <div>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ex accusamus possimus commodi optio mollitia unde quaerat modi voluptas voluptates odit inventore temporibus et harum, aliquid iure veritatis veniam! Accusantium, tenetur.</div>
+            <div>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ex accusamus possimus commodi optio mollitia unde quaerat modi voluptas voluptates odit inventore temporibus et harum, aliquid iure veritatis veniam! Accusantium, tenetur.</div>
+        </footer>
+    </div>
+</body>
+</html>

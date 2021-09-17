@@ -1,0 +1,39 @@
+<!doctype html>
+<html>
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+		<title>Шаблон</title>
+		<style>
+			/* CSS-стили */
+			.my-radio{
+				display: none;
+			}
+			.my-radio-label{
+				border: 1px solid red;
+				padding: 5px;
+				border-radius: 5px;
+				color: red;
+			}
+			.my-radio:checked + .my-radio-label{
+				color: green;
+				border-color: green;
+			}
+
+		</style>
+	</head>
+	<body>
+		<form>
+			
+			<p>
+				<input type="radio" id="my-radio" class="my-radio" name="test"/>
+				<label class="my-radio-label" for="my-radio">Переключатель 1</label>
+			</p>
+			
+			<p>
+				<input type="radio" id="my-radio1" class="my-radio" name="test"/>
+				<label class="my-radio-label" for="my-radio1">Переключатель 2</label>
+			</p>
+			
+		</form>
+	</body>
+</html>
